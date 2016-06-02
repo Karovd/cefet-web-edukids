@@ -46,7 +46,7 @@
 
 .perturbado {}
 .perturbado img {
-	animation: pulsar 50ms linear 0s infinite alternate;
+	animation: pulsar 100ms linear 0s infinite alternate;
 }
 @keyframes pulsar{
 	from{ transform: scale(0.9); }
