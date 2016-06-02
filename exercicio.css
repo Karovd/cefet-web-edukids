@@ -7,14 +7,7 @@
 	transition: 600ms ease-in-out;
 }
 
-/*
- * Exercício 2: Você deve implementar uma metáfora visual para cada um dos 4
- * estados dos animais. Algumas sugestões:
- *   - agitado: animal piscando (opacidade variando)
- *   - alimentado: uma borda verde no animal e o animal fica girando de alegria
- *   - perturbado: animal fica pulsando
- *   - instinto-selvagem: animal dá um salto e cresce, com uma borda vermelha
- */
+/* Exercício 2: */
 .agitado {
 	animation: piscando 200ms ease-in-out 0s infinite alternate;
 }
@@ -55,7 +48,7 @@
 
 .instinto-selvagem {}
 .instinto-selvagem img {
-	animation: roar 450ms linear 0s, redborder 450ms linear 0s;
+	animation: roar 450ms ease-in-out 0s alternate, redborder 450ms linear 0s;
 }
 @keyframes roar{
 	from{ transform: scale(1); }
@@ -64,19 +57,17 @@
 @keyframes redborder{
 	0%   { background: #FFF000; }  100% { background: #FF0000; }
 
-/*
- * Exercício 3: Criar uma imagem sprite com as imagens dos botões de controle
- * (icone-comecar.png e icone-parar.png). Sugestões:
- *   - Usar o nome: sprite-controles.png
- *   - Usar o paint.NET (ou Photoshop) para gerar a nova imagem (sprite)
- *
- */
+/* Exercício 3: */
 
 .comecar,
 .parar {
-	
+  width: 24px;
+  height: 24px;
+  background-image: url('imgs/imgsprite.png');
+}
+
+.parar {
+  background-position: 0 24px;
 }
 
 .comecar {}
-
-.parar {}
